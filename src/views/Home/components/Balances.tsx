@@ -105,7 +105,7 @@ const Balances: React.FC = () => {
         <Footnote>
           Pending harvest
           <FootnoteValue>
-            <PendingRewards /> JUICY
+            <PendingRewards /> SKYXFARM
           </FootnoteValue>
         </Footnote>
       </Card>
@@ -113,14 +113,14 @@ const Balances: React.FC = () => {
 
       <Card>
         <CardContent>
-          <Label text="Total JUICY Supply" />
+          <Label text="Total SKYXFARM Supply" />
           <Value
             value={totalSupply ? getBalanceNumber(totalSupply) : 'Locked'}
           />
         </CardContent>
         <Footnote>
           New rewards per block
-          <FootnoteValue>100 JUICY</FootnoteValue>
+          <FootnoteValue>100 SKYXFARM</FootnoteValue>
         </Footnote>
       </Card>
     </StyledWrapper>

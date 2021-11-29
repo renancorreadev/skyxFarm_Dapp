@@ -68,17 +68,13 @@ const Farm: React.FC = () => {
           </StyledCardWrapper>
           <Spacer />
           <StyledCardWrapper>
-            <Stake
-              lpContract={lpContract}
-              pid={pid}
-              tokenName={lpToken}
-            />
+            <Stake lpContract={lpContract} pid={pid} tokenName={lpToken} />
           </StyledCardWrapper>
         </StyledCardsWrapper>
         <Spacer size="lg" />
         <StyledInfo>
           ⭐️ Every time you stake and unstake LP tokens, the contract will
-          automagically harvest JUICY rewards for you!
+          automagically harvest SKYXFARM rewards for you!
         </StyledInfo>
         <Spacer size="md" />
         <StyledLink
