@@ -11,10 +11,10 @@ const Nav: React.FC = () => {
       <StyledLink exact activeClassName="active" to="/farms">
         Menu
       </StyledLink>
-      <StyledAbsoluteLink
-        href="#"
-        target="_blank"
-      >
+      <StyledGithub href="https://github.com/skyxcripto">
+        Develop by Skyxcripto
+      </StyledGithub>
+      <StyledAbsoluteLink href="#" target="_blank">
         About
       </StyledAbsoluteLink>
     </StyledNav>
@@ -61,5 +61,21 @@ const StyledAbsoluteLink = styled.a`
     padding-right: ${(props) => props.theme.spacing[2]}px;
   }
 `
-
+const StyledGithub = styled.a`
+  color: ${(props) => props.theme.color.grey[400]};
+  font-weight: 700;
+  padding-left: ${(props) => props.theme.spacing[3]}px;
+  padding-right: ${(props) => props.theme.spacing[3]}px;
+  text-decoration: none;
+  &:hover {
+    color: ${(props) => props.theme.color.grey[500]};
+  }
+  &.active {
+    color: ${(props) => props.theme.color.primary.main};
+  }
+  @media (max-width: 400px) {
+    padding-left: ${(props) => props.theme.spacing[2]}px;
+    padding-right: ${(props) => props.theme.spacing[2]}px;
+  }
+`
 export default Nav
